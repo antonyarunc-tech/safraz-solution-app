@@ -1,0 +1,13 @@
+{
+  "name": "Safraz Solution LLP",
+  "short_name": "Safraz",
+  "description": "Safraz Solution LLP client and team app prototype",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#040711",
+  "theme_color": "#050914",
+  "icons": [
+    {"src":"assets/safraz-logo.png","sizes":"512x512","type":"image/png","purpose":"any"}
+  ]
+}

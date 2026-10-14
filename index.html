@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#050914">
+<meta name="description" content="Safraz Solution LLP app prototype for client and employee workflows.">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="assets/safraz-logo.png">
+<link rel="apple-touch-icon" href="assets/safraz-logo.png">
+<title>Safraz Solution LLP | App Prototype</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<div class="ambient ambient-a"></div><div class="ambient ambient-b"></div>
+<header class="topbar">
+  <div class="brand"><img src="assets/safraz-logo.png" alt="Safraz logo"><div><strong>SAFRAZ <span>SOLUTION LLP</span></strong><small>IDEAS TODAY · SOLUTIONS · TOMORROW</small></div></div>
+  <button id="installBtn" class="install-btn" hidden>Install app</button>
+</header>
+<main>
+  <section id="loginView" class="login-layout">
+    <div class="hero">
+      <div class="eyebrow">USA MEDICAL BILLING · RCM</div>
+      <h1>Revenue clarity.<br><em>Stronger collections.</em></h1>
+      <p>A secure workspace concept for clients and the Safraz team.</p>
+      <div class="hero-orb"><div class="orb-core">S</div><div class="orbit orbit-one"></div><div class="orbit orbit-two"></div><span class="orb-tag tag-one">CLAIMS</span><span class="orb-tag tag-two">RCM</span><span class="orb-tag tag-three">INSIGHTS</span></div>
+      <div class="sample-note">PROTOTYPE PREVIEW · SAMPLE DATA ONLY</div>
+    </div>
+    <div class="login-card glass">
+      <div class="mini-logo"><img src="assets/safraz-logo.png" alt=""><span>Secure workspace</span></div>
+      <h2>Welcome back</h2><p class="muted">Choose a role to preview its dashboard.</p>
+      <label for="role">Login role</label>
+      <select id="role">
+        <option value="client">Client</option>
+        <option value="representative">Client Representative</option>
+        <option value="tl">Team Lead (TL)</option>
+        <option value="manager">Manager</option>
+        <option value="executive">C-Level Executive</option>
+      </select>
+      <label for="email">Email / Employee ID</label>
+      <input id="email" type="text" placeholder="demo@safrazsolution.com" autocomplete="username">
+      <label for="password">Password</label>
+      <input id="password" type="password" placeholder="Prototype only — no password needed" autocomplete="current-password">
+      <button id="loginBtn" class="primary-btn">Enter prototype <span>→</span></button>
+      <p class="small muted">No real authentication is connected. Any values work in this visual prototype.</p>
+      <div class="secure-line"><span>✦</span> Role-based screen preview · No real records</div>
+    </div>
+  </section>
+
+  <section id="dashboardView" hidden>
+    <div class="dashboard-head">
+      <div><div class="eyebrow">SAFRAZ SOLUTION LLP · PROTOTYPE</div><h1 id="welcomeTitle">Welcome</h1><p id="roleDescription" class="muted"></p></div>
+      <button id="logoutBtn" class="outline-btn">Log out</button>
+    </div>
+    <div class="sample-banner">DEMO DATA ONLY — no live payer, client, payroll or payment systems are connected.</div>
+    <div id="stats" class="stats-grid"></div>
+    <div class="dashboard-grid">
+      <section class="glass panel wide">
+        <div class="panel-title"><div><span class="eyebrow">WORKSPACE</span><h2>Quick access</h2></div><span class="pill">Preview</span></div>
+        <div id="featureGrid" class="feature-grid"></div>
+      </section>
+      <section class="glass panel">
+        <div class="panel-title"><div><span class="eyebrow">UPDATES</span><h2>Recent activity</h2></div></div>
+        <div id="activityList" class="activity-list"></div>
+      </section>
+      <section id="paymentsPanel" class="glass panel payment-panel" hidden>
+        <div class="panel-title"><div><span class="eyebrow">C-LEVEL ONLY</span><h2>Client payments received by Safraz</h2></div><span class="pill gold">Restricted</span></div>
+        <p class="muted">This section is shown only in the C-Level Executive prototype view. Production access must be enforced by a secure backend, not just the screen.</p>
+        <div class="payment-row"><span>Sunrise Medical Group <small>Sample entry · Oct 2026</small></span><strong>$25,000</strong></div>
+        <div class="payment-row"><span>Metro Health Clinic <small>Sample entry · Oct 2026</small></span><strong>$18,500</strong></div>
+        <div class="payment-row"><span>Lakeview Physicians <small>Sample entry · Oct 2026</small></span><strong>$12,000</strong></div>
+      </section>
+    </div>
+    <div id="detailPanel" class="glass panel detail-panel" hidden></div>
+  </section>
+</main>
+<footer><span>© Safraz Solution LLP · Prototype</span><span>Black · Chrome · Electric Blue · Gold</span></footer>
+<div id="toast" role="status" aria-live="polite"></div>
+<script src="app.js"></script>
+</body></html>
